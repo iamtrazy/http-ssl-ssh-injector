@@ -7,6 +7,8 @@ http ssl ssh tunneling vpn for android and linux devices
 
 [+] - badvpn-tun2socks must be compiled and installed https://github.com/ambrop72/badvpn
 
+[+] - in proxification.sh line 6  "sudo route add $ssh_ip gw 192.168.43.1 metric 5" 192.168.43.1 must be replaced with your default gateway
+
 [+] - on arch and some other linux distros netcat-openbsd is called openbsd-netcat
 
 [+] - apt install screen 
