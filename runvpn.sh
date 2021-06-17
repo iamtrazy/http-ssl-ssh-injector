@@ -40,8 +40,9 @@ if [ "$var" = "SUCCESSFULLY" ];then
     	read
    	chmod +x proxification.sh
 	./proxification.sh
- 	sudo ip tuntap del dev tun0 mode tun
-    	sudo route del $ssh_ip gw 192.168.43.1 metric 5
+ 	ssh_ip=$(cat settings.ini | grep "host =" | awk '{print $3}')
+	ip tuntap del dev tun0 mode tun
+    	route del $ssh_ip gw 192.168.43.1 metric 5
 	echo -e "${SCOLOR}"
 	
 else
