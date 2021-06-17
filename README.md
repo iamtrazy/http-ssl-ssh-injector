@@ -3,7 +3,11 @@ http ssl ssh tunneling vpn for android and linux devices
 
 # packages :
 
-[+] - apt install -y git python openssh sshpass netcat-openbsd corkscrew
+[+] - apt install -y git python openssh sshpass netcat-openbsd corkscrew screen
+
+[+] - badvpn-tun2socks must be compiled and installed https://github.com/ambrop72/badvpn
+
+[+] - on arch and some other linux distros netcat-openbsd is called openbsd-netcat
 
 [+] - apt install screen 
 
