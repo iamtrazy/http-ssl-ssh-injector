@@ -36,8 +36,10 @@ fi
 var=`cat sshlogs.txt | grep "CONNECTED SUCCESSFULLY"|awk '{print $4}'`
 if [ "$var" = "SUCCESSFULLY" ];then 
 	echo -e "${GREEN}---Tunneling  starts-----"
-	chmod +x proxification
-	./proxification > /dev/null
+	echo -e "${GREEN}Press Enter Key To ConTinue......."
+    	read
+   	chmod +x proxification.sh
+	./proxification.sh
 	iptables --flush 
 	echo -e "${SCOLOR}"
 	
