@@ -42,10 +42,6 @@ if [ "$var" = "SUCCESSFULLY" ];then
 	echo -e "${GREEN}---Tunneling  starts-----"
 	chmod +x proxification.sh
 	./proxification.sh
-	ssh_ip=$(cat settings.ini | grep "host =" | awk '{print $3}')
-    	def_gate=$(ip r | grep 'default' | awk '{print$3}')
-    	ip tuntap del dev tun0 mode tun
-    	ip route del $ssh_ip via $def_gate
 	echo -e "${SCOLOR}"
 	iptables --flush
 	
