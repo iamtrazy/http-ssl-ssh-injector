@@ -17,6 +17,5 @@ EOF
 dns2socks 127.0.0.1:1080 1.1.1.1:53 127.0.0.1:53 > /dev/null & sleep 5  && badvpn-tun2socks --tundev tun0 --netif-ipaddr 10.0.0.2 --netif-netmask 255.255.255.0 --socks-server-addr 127.0.0.1:1080 --udpgw-remote-server-addr 127.0.0.1:7300
 killall dns2socks
 mv /etc/resolv.conf.backup /etc/resolv.conf
-sed -i 's/nameserver 127.0.0.1 //'  /etc/resolv.conf
 ip tuntap del dev tun0 mode tun
 ip route del $ssh_ip via $def_gate
