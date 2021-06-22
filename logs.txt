@@ -1,0 +1,14 @@
+[11:51:02] : Waiting for incoming connection to : 127.0.0.1:9092
+
+[11:51:03] : [32m<#> Client 57288 received![37m
+[11:51:03] : [32m<#> Client 57290 received![37m
+[11:51:03] : [32mconnected to 20.184.25.42:443[37m
+[11:51:04] : [32mhandshake starts
+server : dropbear_2017.75
+[11:51:04] : kex: algorithm: curve25519-sha256@libssh.org
+[11:51:04] : kex: host key algorithm: ecdsa-sha2-nistp256
+[11:51:04] : kex: server->client cipher: aes128-ctr MAC: hmac-sha2-256 compression: zlib@openssh.com
+[11:51:04] : Server host key: ecdsa-sha2-nistp256 SHA256:cxX5np492cu3PdEjezjPN4QkH3zNw4NOR7luu195KFA
+[11:51:04] : [32mAuthenticate to password[37m
+[11:51:05] : Authentication Comleted
+[11:51:05] : [32mCONNECTED SUCCESSFULLY [37m
